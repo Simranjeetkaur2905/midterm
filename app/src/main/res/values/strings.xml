@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Simranjeet_764937_MT</string>
+
+    <string-array name="choosecarname">
+        <item>Please choose a car name</item>
+        <item>BMW</item>
+        <item>cruise</item>
+        <item>lamboorgini</item>
+        <item>frari</item>
+        <item>koyta</item>
+        <item>Audi</item>
+        <item>Mercedes</item>
+        <item>Volks Wagon</item>
+        <item>Peugeot</item>
+    </string-array>
+</resources>
