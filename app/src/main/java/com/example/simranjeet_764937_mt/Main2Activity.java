@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
-    EditText detailview;
+    TextView detailview;
 
 
     @Override
@@ -18,9 +18,18 @@ public class Main2Activity extends AppCompatActivity {
 
         detailview = findViewById(R.id.detail1);
 
+
         Intent i = getIntent();
-        String  text = i.getExtras().getString("candidate");
-        detailview.setText(text);
+        String  text = i.getExtras().getString("choose car");
+        String  text1 = i.getExtras().getString("dailyrentvalue");
+        String  text4 = i.getExtras().getString("numberofdaysss");
+        String  text2 = i.getExtras().getString("value without tax");
+        String  text3 = i.getExtras().getString("total amount");
+
+        detailview.setText("car name" + "" + text + "" + "daily rent" + "  " +text1 +"number of days " +
+                "" + text4 +" " + "value without text" + " "+ text2 + "" + "total amount" + " " + text3);
+
+
 
     }
 }

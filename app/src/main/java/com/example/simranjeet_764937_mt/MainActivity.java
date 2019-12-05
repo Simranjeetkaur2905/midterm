@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         dailyrent.setText("190");
                         break;
                     case "Mercedes" :
-                        dailyrent.setText("20000");
+                        dailyrent.setText("200");
                         break;
                     case "Volks Wagon" :
                         dailyrent.setText("210");
@@ -259,13 +259,18 @@ public class MainActivity extends AppCompatActivity {
 
 
                         customer.add(Integer.parseInt(value));
-                        
+
 
                                   Toast.makeText(MainActivity.this, " car selected successfully", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(MainActivity.this, Main2Activity.class);
-                       String str1 = Integer.toString(customer.size());
+                       //String str1 = Integer.toString(customer.size());
 
-                       i.putExtra("detail", str1);
+                       i.putExtra("choose car",spinnertext);
+                       i.putExtra("dailyrentvalue", dailytext1);
+                       i.putExtra("numberofdaysss",numberofdays1);
+                       i.putExtra("value without tax",value);
+                       i.putExtra("total amount",totalvalue);
+
                         startActivity(i);
 
 
